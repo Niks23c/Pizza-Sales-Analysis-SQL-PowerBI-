@@ -53,3 +53,20 @@ _Add PNG screenshots of your dashboard in a `/Screenshots` folder and embed them
 ![KPIs](Screenshots/KPI_Cards.png)
 ![Monthly Trend](Screenshots/Monthly_Trend.png)
 ![Best Sellers](Screenshots/Top_5_Pizzas.png)
+
+
+ Key Learnings
+Writing optimized SQL queries using GROUP BY, JOIN, DATEPART, and aggregation functions
+
+Transforming raw data into meaningful visual insights
+
+Designing intuitive and visually appealing dashboards in Power BI
+
+Business storytelling using data
+
+📬 Contact
+Name: Nikhil
+
+LinkedIn: linkedin.com/in/nikhil-c-993548151
+
+Email: nikhilcaptain4@gmail.com
