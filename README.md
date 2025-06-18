@@ -45,16 +45,6 @@ This project showcases sales performance insights for a fictional pizza shop usi
 
 ---
 
-## 📷 Dashboard Preview (Optional)
-
-_Add PNG screenshots of your dashboard in a `/Screenshots` folder and embed them like below:_
-
-```markdown
-![KPIs](Screenshots/KPI_Cards.png)
-![Monthly Trend](Screenshots/Monthly_Trend.png)
-![Best Sellers](Screenshots/Top_5_Pizzas.png)
-
-
  Key Learnings
 Writing optimized SQL queries using GROUP BY, JOIN, DATEPART, and aggregation functions
 
