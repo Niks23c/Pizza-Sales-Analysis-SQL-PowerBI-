@@ -54,6 +54,14 @@ Designing intuitive and visually appealing dashboards in Power BI
 
 Business storytelling using data
 
+## ⚠️ Usage Notice
+
+This project is shared for **portfolio and educational viewing purposes only**.
+
+All files in this repository are **not licensed for reuse, copying, or redistribution** without explicit permission from the author.
+
+📬 Contact: [nikhilcaptain4@gmail.com](mailto:nikhilcaptain4@gmail.com)
+
 📬 Contact
 Name: Nikhil
 
