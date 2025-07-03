@@ -1,70 +1,117 @@
-# Pizza-Sales-Analysis-SQL-PowerBI-
-Sales analysis dashboard revealing revenue drivers, order patterns, and product performance using SQL &amp; Power BI.
-# 🍕 Pizza Sales Analysis – SQL + Power BI Dashboard
+# 🍕 Pizza Sales Analysis – SQL + Power BI
 
-This project showcases sales performance insights for a fictional pizza shop using SQL for data extraction and Power BI for dashboard visualization. The goal is to understand business trends, high-performing products, and customer ordering behavior.
+This project presents a detailed sales analysis of a fictional pizza shop using SQL and Power BI. It focuses on uncovering revenue trends, top-selling products, customer ordering behavior, and product category performance.
 
 ---
 
-## 🔧 Tools Used
-- SQL Server / MySQL
-- Power BI
-- Excel (for dataset review and cleanup)
+## 📌 Project Objective
+
+To build a dynamic dashboard that helps the business understand:
+- Revenue drivers and performance
+- Daily and monthly sales trends
+- Best and worst performing pizzas
+- Sales distribution by category and size
 
 ---
 
-## 📌 Business Questions Answered
+## 🔧 Tools & Technologies Used
 
-- 📊 What is the **Total Revenue**, **Average Order Value**, and **Total Pizzas Sold**?
-- 📆 What are the **daily** and **monthly** trends for order volume?
-- 🍕 Which are the **top 5 and bottom 5 best-selling pizzas** by:
-  - Revenue
-  - Quantity sold
-  - Number of orders
-- 📐 What is the **sales contribution by pizza size** and **category**?
+- **SQL Server / MySQL** – for data extraction and transformation
+- **Power BI** – for dashboard creation and insights visualization
+- **Excel** – for initial data inspection
 
 ---
 
-## 📁 Project Files
+## 📊 Dashboard Preview
 
-| File | Description |
-|------|-------------|
-| `pizza_sales.csv` | Raw dataset used in the analysis |
-| `Pizza_DB_SQL_Querries.docx` | SQL scripts to extract insights |
-| `Pizza_Sales_Dashboard.pbix` | Power BI dashboard (insights visualized) |
-| `/Screenshots/` | Preview images of the dashboard (optional but recommended) |
+![Pizza Dashboard](assets/PIZZA.gif)
 
----
-
-## 📈 Dashboard Highlights
-
-- **KPIs**: Total Revenue, Total Orders, Total Pizzas Sold, Avg. Order Value
-- **Trends**: Orders by Day of Week and Month
-- **Category-wise & Size-wise Sales %**
-- **Top/Bottom Performers**: Based on Revenue, Quantity, Orders
+Additional screenshots:
+- ![](assets/pizza1.png)
+- ![](assets/Pizza2.png)
 
 ---
 
- Key Learnings
-Writing optimized SQL queries using GROUP BY, JOIN, DATEPART, and aggregation functions
+## 🧮 Key KPIs
 
-Transforming raw data into meaningful visual insights
+- ✅ Total Revenue  
+- ✅ Average Order Value  
+- ✅ Total Pizzas Sold  
+- ✅ Total Orders  
+- ✅ Average Pizzas per Order  
 
-Designing intuitive and visually appealing dashboards in Power BI
+-- sql
+-- Total Revenue
+SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
 
-Business storytelling using data
+-- Average Order Value
+SELECT (SUM(total_price) / COUNT(DISTINCT(order_id))) AS Average_order_value FROM pizza_sales;
 
-## ⚠️ Usage Notice
+-- Total Orders
+SELECT COUNT(DISTINCT(order_id)) AS Total_orders FROM pizza_sales;
 
-This project is shared for **portfolio and educational viewing purposes only**.
 
-All files in this repository are **not licensed for reuse, copying, or redistribution** without explicit permission from the author.
+## 📈 Sales Insights & Trends
+# 📅 Order Trends:
+Daily Orders by Day of Week
 
-📬 Contact: [nikhilcaptain4@gmail.com](mailto:nikhilcaptain4@gmail.com)
+Monthly Orders by Month Name
 
-📬 Contact
-Name: Nikhil
+SELECT DATENAME(DW, order_date) AS order_day, COUNT(DISTINCT(order_id)) AS Total_orders 
+FROM pizza_sales
+GROUP BY DATENAME(DW, order_date);
+
+## 🧩 Category & Size Contributions:
+
+Percentage Sales by Pizza Category & Pizza Size
+
+Filtered by month and quarter
+
+## 🥇 Top & Bottom Performers
+
+Top 5 by Revenue, Quantity, and Orders
+
+Bottom 5 by Quantity and Orders
+
+-- Top 5 by Revenue
+SELECT TOP 5 pizza_name, SUM(total_price) AS Total_sales 
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_sales DESC;
+
+## 💡 Key Business Insights
+
+Regular-sized pizzas are the most popular across all quarters
+
+Classic and Supreme categories lead in both quantity and revenue
+
+Weekends and evenings see the highest order volume
+
+A few pizzas contribute disproportionately to total revenue
+
+## 🧠 Skills & Learnings
+Writing optimized SQL using GROUP BY, DATEPART, and aggregations
+
+Data storytelling with visual insights
+
+Dashboard UI/UX design in Power BI
+
+Business-oriented analysis and insight extraction
+
+## 📁 Project Assets
+pizza_sales.csv – Raw dataset
+
+Power BI visuals (screenshots + GIF)
+
+SQL scripts for KPI & chart extraction
+
+This README
+
+## 📬 Contact
+Name: Nikhil Chavan
+
+Email: nikhilcaptain4@gmail.com
 
 LinkedIn: linkedin.com/in/nikhil-c-993548151
 
-Email: nikhilcaptain4@gmail.com
+## 🔒 This project is shared for educational & portfolio purposes only.
