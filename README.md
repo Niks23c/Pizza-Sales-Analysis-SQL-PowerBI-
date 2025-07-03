@@ -24,11 +24,11 @@ To build a dynamic dashboard that helps the business understand:
 
 ## 📊 Dashboard Preview
 
-![Pizza Dashboard](assets/PIZZA.gif)
+![Pizza Dashboard](Screenshots/PIZZA.gif)
 
 Additional screenshots:
-- ![](assets/pizza1.png)
-- ![](assets/Pizza2.png)
+- ![](Screenshots/pizza1.png)
+- ![](Screenshots/Pizza2.png)
 
 ---
 
