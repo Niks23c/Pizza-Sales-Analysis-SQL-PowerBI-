@@ -24,10 +24,10 @@ To build a dynamic dashboard that helps the business understand:
 
 ## 📊 Dashboard Preview
 
-![Pizza Dashboard](Screenshots/PIZZA.gif)
+![Pizza Dashboard](Screenshots/Pizza.gif)
 
 Additional screenshots:
-- ![](Screenshots/pizza1.png)
+- ![](Screenshots/Pizza1.png)
 - ![](Screenshots/Pizza2.png)
 
 ---
